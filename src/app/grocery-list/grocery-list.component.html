@@ -1,0 +1,10 @@
+<ul>
+  <li *ngFor="let item of groceryList">
+    <a [routerLink]="'item/' + (item | lowercase)">{{item}}</a>
+  </li>
+</ul>
+
+<h4>Item Details:</h4>
+<blockquote>
+  <router-outlet></router-outlet>
+</blockquote>
